@@ -11,7 +11,7 @@ Main steps of data cleansing:
 - 1, standardization: lower case, change punctuation to space, change foreign letters to Latin, change multiple spaces to one 
 - 2, deduplication
 - 3, omit stopwords (in R with reticulate using nltk python package)
-- 4, define a dictionary to correct misspellings: the dictionary isbased on word frequencies of the official ISCO occupations
+- 4, define a dictionary to correct misspellings: the dictionary is based on word frequencies of the official ISCO occupations
 - 5, correct misspelled words if Levenshtein distance is max. 1: change these words to the most frequent word in dictionary
 - 6, lemmatize words & part of speech analysis (in python, spacy, pandas)
 - 7, compile a thematic dictionary based on the Hungarian webcorpus and the lemmas from source and ISCO occupations
